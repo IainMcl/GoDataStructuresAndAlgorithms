@@ -19,12 +19,10 @@ LinearSearch(arr, needle)
 
 needle = 1000
 LinearSearch(arr, needle)
-// This will return -1 as 1000 is not a memeber of the array
-
-// This will return 
+// This will return -1 as 1000 is not a member of the array
 ```
 
-This algorithm itterates over each value in the array and checks if it is the 
+This algorithm iterates over each value in the array and checks if it is the 
 needle.
 
 Linear search has a time complexity of $\mathcal{O}N$ 
@@ -32,12 +30,48 @@ Linear search has a time complexity of $\mathcal{O}N$
 ### <a id="binary-search"></a>Binary search
 
 This implements the same interface as [Linear search](#linear-search), however,
-requiers the input to be an ordered list. 
+requires the input to be an ordered list. 
 
 With this extra constraint binary search allows to skip out checks and reduces
 the time complexity of this search to $\mathcal{OlogN}$.
 
 ### <a id="two-crystal-balls"></a>Two Crystal balls
+
+Two crystal balls solves problem using different forms of 
+[Linear search](#linear-search).
+
+The problem is: Given two crystal balls and a tall building with many floors,
+find the maximum height that a ball can be dropped from without breaking. Both
+balls are allowed to be broken to find this answer.
+
+```go
+testBuilding := []bool{false, false, false, false, true, true, true}
+// The test building represents each floor of the building with each index of 
+// array. The ground floor being testBuilding[0], first floor being 
+// testBuilding[1], and so on.
+
+TwoCrystalBalls(testBuilding)
+// In this instance will return 3 as that is the highest floor that the ball
+// can be dropped from without smashing.
+```
+
+This could be done solely using [Liner search](#linear-search) until a ball 
+breaks. However, we have been given two balls so can afford to break one to 
+improve speed.
+
+This can be done by performed by stepping through the array in large steps 
+until one of the balls breaks. When we have found that index go back to the 
+last known point of safety +1 and then linearly search until the second ball 
+breaks.
+
+To maximise speed the size of the steps need to be changed. With steps that are
+too large result in the linear search being too long. In the extreme case 
+where the steps are the size of the array, one step would be taken and found to 
+break the ball. Then linearly searching through the whole array anyway to find 
+where the second ball breaks. Conversly if the steps are too small this will 
+again approach linear search time. The balance is found by taking steps that
+are $\sqrt(N)$.
+
 
 ### <a id="bubble-sort"></a>Bubble sort
 

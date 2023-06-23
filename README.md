@@ -27,7 +27,7 @@ LinearSearch(arr, needle)
 This algorithm itterates over each value in the array and checks if it is the 
 needle.
 
-Linear search has a time complexity of $\mathcal{0}$ 
+Linear search has a time complexity of $\mathcal{O}N$ 
 
 ### Binary search
 

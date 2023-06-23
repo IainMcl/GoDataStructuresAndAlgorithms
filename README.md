@@ -70,7 +70,7 @@ where the steps are the size of the array, one step would be taken and found to
 break the ball. Then linearly searching through the whole array anyway to find 
 where the second ball breaks. Conversly if the steps are too small this will 
 again approach linear search time. The balance is found by taking steps that
-are $\sqrt(N)$.
+are $\sqrt{ N }$.
 
 
 ### <a id="bubble-sort"></a>Bubble sort

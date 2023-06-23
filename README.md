@@ -4,9 +4,9 @@ Flowing along with The Primagen's
 ['Last Algorithms Course You'll need'](https://frontendmasters.com/courses/algorithms/) 
 and converting the learning from Typescript examples to Go.
 
-## Algorithms
+## <a id="algorithms"></a>Algorithms
 
-### Linear search
+### <a id="linear-search"></a>Linear search
 
 Given an array find a value's location with that array.
 
@@ -29,47 +29,53 @@ needle.
 
 Linear search has a time complexity of $\mathcal{O}N$ 
 
-### Binary search
+### <a id="binary-search"></a>Binary search
 
-### Two Crystal balls
+This implements the same interface as [Linear search](#liner-search), however,
+requiers the input to be an ordered list. 
 
-### Bubble sort
+With this extra constraint binary search allows to skip out checks and reduces
+the time complexity of this search to $\mathcal{OlogN}.
 
-### Linked list
+### <a id="two-crystal-balls"></a>Two Crystal balls
 
-### Queue
+### <a id="bubble-sort"></a>Bubble sort
 
-### Stack
+### <a id="linked-list"></a>Linked list
 
-### Array list
+### <a id="queue"></a>Queue
 
-### Array buffer
+### <a id="stack"></a>Stack
 
-### Path finding (recursion)
+### <a id="array-list"></a>Array list
 
-### Quick sort
+### <a id="array-buffer"></a>Array buffer
 
-### Doubly linked list
+### <a id="path-finding"></a>Path finding (recursion)
 
-### Tree traversal
+### <a id="quick-sort"></a>Quick sort
 
-### Breadth-first search (BFS)
+### <a id="doubly-linked-list"></a>Doubly linked list
 
-### Binary tree comaprison
+### <a id="tree-traversal"></a>Tree traversal
 
-### Depth first search (DFS)
+### <a id="breadth-first-search"></a>Breadth-first search (BFS)
 
-### Heap
+### <a id="binary-tree-comaprison"></a>Binary tree comaprison
 
-### BFD on adjacency matrix
+### <a id="depth-first-search (dfs)"></a>Depth first search (DFS)
 
-### DFS on adjacency list
+### <a id="heap"></a>Heap
 
-### Dijkstra's shortest path
+### <a id="bfd-on-adjacency-matrix"></a>BFD on adjacency matrix
 
-### LRU cache
+### <a id="dfs-on-adjacency-list"></a>DFS on adjacency list
 
-## How to run tests
+### <a id="dijkstras-shortest-path"></a>Dijkstra's shortest path
+
+### <a id="lru-cache"></a>LRU cache
+
+## <a id="how-to-run-tests"></a>How to run tests
 
 All tests can be run using `go test` with a verbose output usign `go test -v`.
 

@@ -31,11 +31,11 @@ Linear search has a time complexity of $\mathcal{O}N$
 
 ### <a id="binary-search"></a>Binary search
 
-This implements the same interface as [Linear search](#liner-search), however,
+This implements the same interface as [Linear search](#linear-search), however,
 requiers the input to be an ordered list. 
 
 With this extra constraint binary search allows to skip out checks and reduces
-the time complexity of this search to $\mathcal{OlogN}.
+the time complexity of this search to $\mathcal{OlogN}$.
 
 ### <a id="two-crystal-balls"></a>Two Crystal balls
 
